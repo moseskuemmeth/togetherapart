@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "136156591893",
+    "project_id": "togetherapart-cd369",
+    "storage_bucket": "togetherapart-cd369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136156591893:android:a05c5f351d2d17ec615b1c",
+        "android_client_info": {
+          "package_name": "com.example.togetherapart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136156591893-ulos2vnrbqo2e7bg6v3ag39c9gievofr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8y8xXJ5MoSeE9masOI0sErY3BFSnwg4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136156591893-ulos2vnrbqo2e7bg6v3ag39c9gievofr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "136156591893-7j3fnpmd9av98n6eu53ctt88047ggf5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.togetherapart.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136156591893:android:59c28d67197e065a615b1c",
+        "android_client_info": {
+          "package_name": "com.togetherapart.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136156591893-ulos2vnrbqo2e7bg6v3ag39c9gievofr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8y8xXJ5MoSeE9masOI0sErY3BFSnwg4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136156591893-ulos2vnrbqo2e7bg6v3ag39c9gievofr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "136156591893-7j3fnpmd9av98n6eu53ctt88047ggf5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.togetherapart.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
