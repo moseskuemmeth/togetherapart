@@ -150,7 +150,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
         return Card(
           elevation: 5,
           margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-          color: Colors.red.shade50,
+          color: isUserEvent? Colors.pink.shade200 : Colors.red.shade50,
           child: ListTile(
             contentPadding: const EdgeInsets.all(10),
             title: Text(

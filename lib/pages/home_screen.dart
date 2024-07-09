@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   var post = posts[index];
                   //print('Post: ${post.data()}');
                   var userRef = post['user'];
-                  if (userRef is DocumentReference && post['userId'] != auth.currentUser?.uid) {
+                  if (userRef is DocumentReference) {
                     return FutureBuilder<DocumentSnapshot>(
                       future: userRef.get(),
                       builder: (context, userSnapshot) {
