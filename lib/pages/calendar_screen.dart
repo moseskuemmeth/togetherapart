@@ -178,7 +178,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
         actions: [
           DropdownButton<String>(
             value: _viewMode,
-            icon: const Icon(Icons.arrow_downward),
+            icon: const Icon(Icons.arrow_drop_down),
             onChanged: (String? newValue) {
               setState(() {
                 _viewMode = newValue!;

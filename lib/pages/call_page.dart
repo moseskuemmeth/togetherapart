@@ -13,12 +13,10 @@ class _CallPageState extends State<CallPage> {
       agoraConnectionData: AgoraConnectionData(
           appId: '7dd1a83ab91e4e3ebc5910697db35d02',
           channelName: 'firstchannel',
-          tempToken:
-              '007eJxTYBBl0r8TwrXs2PcpDRO1bXjD87fX363ZuN8kmH1vavjH0M0KDOYpKYaJFsaJSZaGqSapxqlJyaaWhgZmluYpScamKQZGnWfb0xoCGRnSTdayMjJAIIjPw5CWWVRckpyRmJeXmsPAAAAUcSI0'));
+          tempToken:'007eJxTYBBl0r8TwrXs2PcpDRO1bXjD87fX363ZuN8kmH1vavjH0M0KDOYpKYaJFsaJSZaGqSapxqlJyaaWhgZmluYpScamKQZGnWfb0xoCGRnSTdayMjJAIIjPw5CWWVRckpyRmJeXmsPAAAAUcSI0'));
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _initAgora();
   }
@@ -52,9 +50,8 @@ class _CallPageState extends State<CallPage> {
             ),
           ],
         ),
-      // ignore: avoid_types_as_parameter_names
       ), 
-      //onPopInvoked: (bool)  => false
+      onPopInvoked: (value)  => true
       )
     );
   }

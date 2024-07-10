@@ -113,22 +113,25 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
 
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser == null) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('You must be logged in to create a post')));
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('You must be logged in to create a post')));
         return;
       }
 
       DocumentReference userRef = db.collection('users').doc(currentUser.uid);
-      
+
       db.collection('posts').add({
         'title': _title,
         'user': userRef,
         'message': _message,
         'time': Timestamp.now(),
       }).then((_) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Post created successfully')));
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Post created successfully')));
         Navigator.of(context).pop();
       }).catchError((error) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to create post: $error')));
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Failed to create post: $error')));
       });
     }
   }
@@ -198,8 +201,10 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
               ElevatedButton(
                 onPressed: _submitPost,
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white, backgroundColor: Colors.red.shade200,
-                  padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.red.shade200,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),
                   ),

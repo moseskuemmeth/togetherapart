@@ -1,16 +1,17 @@
 # togetherapart
 
-A new Flutter project.
+To test the TogetherApart app, please consider the following:
 
-## Getting Started
+Use two devices. (The app was only tested on Android)
 
-This project is a starting point for a Flutter application.
+use the accounts: 
+Email: asdf@asdf.com | Password: asdfgh
+Email: qwert@zui.com | Password: qwertz
 
-A few resources to get you started if this is your first Flutter project:
+Options for viewing and changing the user’s username are not included.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Calendar events are only set for dates 09.07.2024-11.07.2024. New events can always be added.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For video calls, set up your own Agora credentials. You will need aan appId, a channelName and a tempToken. This are to be added to call_page.dart.
+Agora video: https://www.youtube.com/watch?v=zVqs1EIpVxs
+

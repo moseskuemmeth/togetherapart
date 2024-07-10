@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
             NavigationDestination(
               selectedIcon: Icon(Icons.person),
               icon: Icon(Icons.person_outline_outlined),
-              label: 'Journey',
+              label: 'Profile',
             ),
             NavigationDestination(
               selectedIcon: Icon(Icons.calendar_month),

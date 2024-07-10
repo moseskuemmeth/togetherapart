@@ -38,14 +38,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 return const Center(child: CircularProgressIndicator());
               }
               var posts = snapshot.data!.docs;
-              //posts.removeWhere((element) => element['userId'] == auth.currentUser!.uid);
               return ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: posts.length,
                 itemBuilder: (context, index) {
                   var post = posts[index];
-                  //print('Post: ${post.data()}');
                   var userRef = post['user'];
                   if (userRef is DocumentReference) {
                     return FutureBuilder<DocumentSnapshot>(
